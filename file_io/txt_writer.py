@@ -24,8 +24,8 @@ def format_operation(op: Operation) -> str:
     parts = [
         op.parameter,
         f"{op.multiplier:.10g}",
-        op.format_filter_field(op.type_id),
-        op.format_filter_field(op.id_val),
+        op.format_filter_field(op.type),
+        op.format_filter_field(op.id),
         op.format_filter_field(op.tag),
     ]
     return "  ".join(parts)
