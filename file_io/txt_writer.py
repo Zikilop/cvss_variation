@@ -56,6 +56,8 @@ def write_scenario(
     lines.append(str(scenario.size))
 
     for script in iterator:
+        # TODO: надо сделать номер скрипта
+        lines.append("# script №")
         # Количество операций в скрипте
         lines.append("# Number of operations in script")
         lines.append(str(script.size))
@@ -66,4 +68,4 @@ def write_scenario(
             lines.append(format_operation(op))
 
     # Записываем одним вызовом — эффективнее для больших файлов
-    path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    path.write_text("\n".join(lines) + "\n", encoding="ansi")
