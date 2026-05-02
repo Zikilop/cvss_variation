@@ -14,9 +14,9 @@ class Operation:
     Attributes:
         parameter:  имя параметра (пока доступны SInit, SMin, SMax, PMin, PMax, Leng, Diff)
         multiplier: вещественный множитель
-        type:       фильтр по Type (если None — не отслеживается)
-        id:         фильтр по ID   (если None — не отслеживается)
-        tag:        фильтр по Tag  (если None — не отслеживается)
+        type:       фильтр по Type (если None -- не отслеживается)
+        id:         фильтр по ID   (если None -- не отслеживается)
+        tag:        фильтр по Tag  (если None -- не отслеживается)
     """
     parameter: str
     multiplier: float
